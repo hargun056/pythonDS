@@ -52,7 +52,7 @@ print("______________________________")
 print()
 
 # Question 6
-l1=["Abhishek Sharma","Shubman Gill","Arshdeep Singh","Shreyas Iyer","Virat Kohli"]
+l1=["Virat Kohli","Abhishek Sharma","Shubman Gill","Arshdeep Singh","Shreyas Iyer"]
 print(l1)
 frnd1=input("Enter a friend: ")
 l1.append(frnd1)
