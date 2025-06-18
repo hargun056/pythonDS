@@ -24,8 +24,8 @@ tup=(3, 5, 1, 8, 2)
 print("Original Tuple: ", tup)
 tup=list(tup)
 tup.sort()
-print("Max= ",tup[0])
-print("Min= ",tup[-1])
+print("Min= ",tup[0])
+print("Max= ",tup[-1])
 
 
 print()
