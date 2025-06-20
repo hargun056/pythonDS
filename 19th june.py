@@ -1,109 +1,121 @@
-# Dictionary 
-# Question 1
-num=int(input("Enter the number of items: "))
-dict={}
-for i in range(num):
-    key=input("Enter the key: ")
-    value=input("Enter the value: ")
-    dict[key]=value
-print("Dictionary: ",dict)
+# # Dictionary 
+# # Question 1
+# num=int(input("Enter the number of items: "))
+# dict={}
+# for i in range(num):
+#     key=input("Enter the key: ")
+#     value=input("Enter the value: ")
+#     dict[key]=value
+# print("Dictionary: ",dict)
 
 
-print()
-print("______________________________")
-print()
-# Question 2
-employee_details={101:{'name':"Klaus","dept":"Technology",'salary':100000},
-                  102:{'name':'Elijah','dept':'Pharmacy','salary':70000},
-                  103:{'name':"Rebecca","dept":"Technology",'salary':90000},
-                  104:{'name':"Kol","dept":"Finances",'salary':50000},
-                  105:{'name':"Hope","dept":"Accounts",'salary':45000}}
-list1=[]
-for i in employee_details:
-    if employee_details[i]['salary']>50000:
-        list1.append(employee_details[i]['name'])
-print("Employees with salary greater than 50000: ",list1)
+# print()
+# print("______________________________")
+# print()
 
 
-print()
-print("______________________________")
-print()
-# Question 3
-import random
-ans=random.randint(1,100)
-guess = int(input("guess the number: "))
-
-while(guess!=ans):
-    if guess<ans:
-        print("guess higher")
-    else:
-        print("guess lower")
-    guess=int(input("guess the number: "))
-
-print("CORRECT GUESS! YOU WON")
+# # Question 2
+# employee_details={101:{'name':"Klaus","dept":"Technology",'salary':100000},
+#                   102:{'name':'Elijah','dept':'Pharmacy','salary':70000},
+#                   103:{'name':"Rebecca","dept":"Technology",'salary':90000},
+#                   104:{'name':"Kol","dept":"Finances",'salary':50000},
+#                   105:{'name':"Hope","dept":"Accounts",'salary':45000}}
+# list1=[]
+# for i in employee_details:
+#     if employee_details[i]['salary']>50000:
+#         list1.append(employee_details[i]['name'])
+# print("Employees with salary greater than 50000: ",list1)
 
 
-print()
-print("______________________________")
-print()
-# Question 4
-price=float(input("Enter the price of the product: "))
-if price>=1000:
-    print("Price: ",price)
-    print("Discount applied= 10%")
-    dis=price-(price/10)
-    print("Discounted Price: ",dis)
-elif price<1000 and price>=500:
-    print("Price: ",price)
-    print("Discount applied= 5%")
-    dis=price-(price/20)
-    print("Discounted Price: ",dis)
-else:
-    print("Price: ",price)
-    print("No discount")
+# print()
+# print("______________________________")
+# print()
 
 
-print()
-print("______________________________")
-print()
-# Question 5
-pwd=input("Enter the password: (At least 8 characters long \nContains both uppercase and lowercase characters \nContains at least one digit \nContains at least one special character): ")
-if len(pwd)>=8:
-    for i in pwd:
-        if i.isupper():
-            up=True
-        elif i.islower():
-            lo=True
-        elif i.isdigit():
-            di=True
-        elif i in "!@#$%^&*()-_=+[]{}|;:'\",.<>?/\\`~":
-            sp=True
-    if up and lo and di and sp:
-        print("Password is strong")
-    else:
-        print("Password is not strong")
-else:
-    print("Length is less than 8.")
-    print("Password is weak")
+# # Question 3
+# import random
+# ans=random.randint(1,100)
+# guess = int(input("guess the number: "))
+
+# while(guess!=ans):
+#     if guess<ans:
+#         print("guess higher")
+#     else:
+#         print("guess lower")
+#     guess=int(input("guess the number: "))
+
+# print("CORRECT GUESS! YOU WON")
+
+
+# print()
+# print("______________________________")
+# print()
+
+
+# # Question 4
+# price=float(input("Enter the price of the product: "))
+# if price>=1000:
+#     print("Price: ",price)
+#     print("Discount applied= 10%")
+#     dis=price-(price/10)
+#     print("Discounted Price: ",dis)
+# elif price<1000 and price>=500:
+#     print("Price: ",price)
+#     print("Discount applied= 5%")
+#     dis=price-(price/20)
+#     print("Discounted Price: ",dis)
+# else:
+#     print("Price: ",price)
+#     print("No discount")
+
+
+# print()
+# print("______________________________")
+# print()
+
+
+# # Question 5
+# pwd=input("Enter the password: (At least 8 characters long \nContains both uppercase and lowercase characters \nContains at least one digit \nContains at least one special character): ")
+# if len(pwd)>=8:
+#     for i in pwd:
+#         if i.isupper():
+#             up=True
+#         elif i.islower():
+#             lo=True
+#         elif i.isdigit():
+#             di=True
+#         elif i in "!@#$%^&*()-_=+[]{}|;:'\",.<>?/\\`~":
+#             sp=True
+#     if up and lo and di and sp:
+#         print("Password is strong")
+#     else:
+#         print("Password is not strong")
+# else:
+#     print("Length is less than 8.")
+#     print("Password is weak")
 
 
 
-print()
-print("______________________________")
-print()
-# Question 6
-li=[20,30,40,[57,66,30,[70,80],"Hello"],50,True]
-li[3][3].insert(1,76)
-print("List after inserting 76: ",li)
-li[3].insert(1,88)
-print("List after inserting 88: ",li)
-
-print("Letter H: ",li[3][4][0])
+# print()
+# print("______________________________")
+# print()
 
 
-print()
-print("______________________________")
-print()
+# # Question 6
+# li=[20,30,40,[57,66,30,[70,80],"Hello"],50,True]
+# li[3][3].insert(1,76)
+# print("List after inserting 76: ",li)
+# li[3].insert(1,88)
+# print("List after inserting 88: ",li)
+
+# print("Letter H: ",li[3][4][0])
+
+
+# print()
+# print("______________________________")
+# print()
+
+
 # Question 7
 print("----------------------------------------")
 print("\tWelcome to Trip Planner")
