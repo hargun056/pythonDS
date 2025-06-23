@@ -393,7 +393,7 @@ if len(words)<=19 or len(words)>=10:
 else:
     if len(words)>19:
         print("String is too long")
-    else:
+    elif len(words)<10:
         print("String is too short")
 
 
