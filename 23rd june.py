@@ -1,61 +1,61 @@
-# # Question 1
-# print("----------------------------------------")
-# print("\t Welcome to CodeRail")
-# print("----------------------------------------")
-# name=input("Enter your name: ")
-# age=int(input("Enter your age: "))
-# print("Choose a class: ")
-# print("1. First Class- Rs.1500 \n2. Second Class- Rs.1000 \n3. Sleeper Class- Rs.500")
-# choice=int(input("Choice-  "))
-# if choice==1:
-#     clss="First Class"
-#     price=1500
-# elif choice==2:
-#     clss="Second Class"
-#     price=1000
-# elif choice==3:
-#     clss="Sleeper Class"
-#     price=500
-# else:
-#     print("Invalid choice")
-#     exit()
+# Question 1
+print("----------------------------------------")
+print("\t Welcome to CodeRail")
+print("----------------------------------------")
+name=input("Enter your name: ")
+age=int(input("Enter your age: "))
+print("Choose a class: ")
+print("1. First Class- Rs.1500 \n2. Second Class- Rs.1000 \n3. Sleeper Class- Rs.500")
+choice=int(input("Choice-  "))
+if choice==1:
+    clss="First Class"
+    price=1500
+elif choice==2:
+    clss="Second Class"
+    price=1000
+elif choice==3:
+    clss="Sleeper Class"
+    price=500
+else:
+    print("Invalid choice")
+    exit()
 
 
-# if age<=5:
-#     print("Ticket is free")
-#     price=0
-# elif age>60:
-#     print("20% discount")
-#     price=price-(price/5)
-# print("Do you want to add a meal(Y/N): ")
-# meal=input("Enter your choice: ")
-# if meal=='y' or meal=='Y':
-#     price=price+200
-#     print("Rs 200 extra")
-#     m='Yes'
-# elif meal=='n' or meal=='N':
-#     print("No extra charge")
-#     m='No'
-# else:
-#     print("Invalid choice")
-#     m='No'
+if age<=5:
+    print("Ticket is free")
+    price=0
+elif age>60:
+    print("20% discount")
+    price=price-(price/5)
+print("Do you want to add a meal(Y/N): ")
+meal=input("Enter your choice: ")
+if meal=='y' or meal=='Y':
+    price=price+200
+    print("Rs 200 extra")
+    m='Yes'
+elif meal=='n' or meal=='N':
+    print("No extra charge")
+    m='No'
+else:
+    print("Invalid choice")
+    m='No'
 
 
-# print()
-# print("----------------------------------------")
-# print("\t Ticket Summary")
-# print("----------------------------------------")
-# print("Passenger Name- ",name)
-# print("Age- ",age)
-# print("Class- ",clss)
-# print("Meal added- ",m)
-# print("Final Price- ",price)
-# print("Enjoy your journey!🎉")
+print()
+print("----------------------------------------")
+print("\t Ticket Summary")
+print("----------------------------------------")
+print("Passenger Name- ",name)
+print("Age- ",age)
+print("Class- ",clss)
+print("Meal added- ",m)
+print("Final Price- ",price)
+print("Enjoy your journey!🎉")
 
 
-# print()
-# print("______________________________")
-# print()
+print()
+print("______________________________")
+print()
 
 #Question 2
 
@@ -96,8 +96,8 @@ if coup.lower()=="yes":
         price=price-(price*0.5)
     elif code=='BK20':
         print("Original Price- ",price)
-        print("Discount applied: 20%")
-        price=price-(price*0.2)
+        print("Discount applied: Rs20")
+        price=price-20
     else:
         print("Invalid coupon code")
         print("No coupon applied")
