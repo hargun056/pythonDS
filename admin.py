@@ -60,18 +60,18 @@ while True:
             print("No movies saved")
         else:
             search = input_something("Enter the search term: ").lower()
-        found = False
-        for movie in data:
-            if (search in movie["name"].lower() or
-                search in str(movie["year"]) or
-                search in str(movie["duration"]) or
-                any(search in genre.lower() for genre in movie["genres"])):
+            found = False
+            for movie in data:
+                if (search in movie["name"].lower() or
+                    search in str(movie["year"]) or
+                    search in str(movie["duration"]) or
+                    any(search in genre.lower() for genre in movie["genres"])):
                 
-                print("Movie found:")
-                print(f"Movie Name: {movie['name']}, Year: {movie['year']}, Duration: {movie['duration']} mins, Genres: {', '.join(movie['genres'])}")
-                found = True
-        if not found:
-            print("No movies found")
+                        print("Movie found:")
+                        print(f"Movie Name: {movie['name']}, Year: {movie['year']}, Duration: {movie['duration']} mins, Genres: {movie['genres']}")
+                        found = True
+            if not found:
+                print("No movies found")
     elif choice=='v':
         if len(data)==0:
             print("No movies saved")
